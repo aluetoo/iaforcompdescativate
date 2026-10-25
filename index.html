@@ -1,3 +1,4 @@
+<!-- 
 <!DOCTYPE html>
 <html lang="fr">  
 <head>
@@ -958,5 +959,155 @@
       });
     }
   </script>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluetoo - IA Désactivée</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top right, #1a1a2e, #0f0c1b);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /* Arrière-plan décoratif et lumineux */
+        .glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: #ff3366;
+            filter: blur(120px);
+            opacity: 0.15;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        /* Carte principale (Effet Glassmorphism) */
+        .container {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        /* Animation d'apparition */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .icon-box {
+            font-size: 50px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+            background: linear-gradient(45deg, #ff4e50, #f9d423);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: #b3b3cc;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        /* Bouton d'action moderne */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 16px 24px;
+            background: #ffffff;
+            color: #0f0c1b;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 14px;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        }
+
+        .btn:hover {
+            background: #f0f0f5;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        /* Version Mobile */
+        @media (max-width: 400px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 21px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glow"></div>
+
+    <div class="container">
+        <div class="icon-box">🚨</div>
+        <h1>IA désactivée</h1>
+        <p>Cette version de l'application n'est plus active. Pour continuer à échanger de manière fluide, accédez instantanément à notre plateforme mise à jour.</p>
+        <a href="https://aluetoo.github.io/aluetoo-mobile/" class="btn">Visiter la version à jour</a>
+    </div>
+
 </body>
 </html>
